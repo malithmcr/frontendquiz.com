@@ -1,0 +1,16 @@
+@mixin fontFamily {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.start-wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 40vh 0;
+}
+
+button {
+    @include fontFamily;
+    padding: 6px 70px;
+    font-size: 17px;
+}
