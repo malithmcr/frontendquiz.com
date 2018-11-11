@@ -1,0 +1,25 @@
+div.questions-wrapper{
+    .questions-container {
+        padding: 10%;
+    }
+
+    div.next-wrapper{
+        text-align: right;
+        margin: 20px 0;
+    }
+
+    .Anaswers {
+        ul {
+            li {
+                list-style: none;
+                display: block;
+                cursor: pointer;
+                margin: 41px 0;
+                &:hover {
+                    color: #fff9f0;
+                }
+            }
+        }
+    }
+
+}

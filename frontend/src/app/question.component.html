@@ -1,6 +1,19 @@
 <h1>
     {{title}}
 </h1>
-<div  [className]="'start-wrapper'">
-    <button mat-raised-button color="warn" (click)="start()">Start</button>
+<div [className]="'user-info'">
+    Hi {{name}}
+</div> 
+<div  [className]="'start-wrapper'" *ngIf="startQuiz">
+    <div [className]="'start-form-wrapper'">
+        <form class="start-form">
+            <mat-form-field class="name">
+                <input [(ngModel)]="name" autocomplete="off" name="name" matInput placeholder="Please Enter your Name">
+            </mat-form-field>
+        </form>
+    </div>
+    <button mat-raised-button color="warn" (click)="start()">{{startButton}}</button>
 </div>
+<div *ngIf="!startQuiz">
+    <questions></questions>
+</div>   

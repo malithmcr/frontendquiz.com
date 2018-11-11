@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 
 export class QuestionComponent {
     title = 'FrontendQuiz.com';
+    startQuiz: boolean = true;
+    startButton: string = 'Start';
     start() {
+        this.startQuiz = !this.startQuiz;
+        this.startButton = 'Loading...';
         console.log("started");
     }
 }

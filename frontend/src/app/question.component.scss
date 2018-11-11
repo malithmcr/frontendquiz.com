@@ -2,11 +2,20 @@
     font-family: 'Raleway', sans-serif;
 }
 
+h1 {
+    display: inline-block;
+}
 
 .start-wrapper {
     text-align: center;
     width: 100%;
     margin: 40vh 0;
+}
+
+.user-info {
+    text-align: right;
+    padding: 30px;
+    float: right;
 }
 
 button {
