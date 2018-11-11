@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule }    from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { QuestionsService } from './questions.service';
 import { FormsModule } from '@angular/forms';
 import {
   MatButtonModule, 
@@ -29,9 +31,10 @@ import { QuestionsComponent } from './questions/questions.component';
     MatButtonModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [QuestionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

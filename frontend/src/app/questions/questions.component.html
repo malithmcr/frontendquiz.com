@@ -5,18 +5,19 @@
     </h2>
 
     <div class="Anaswers">
-          <ul>
+          <ul *ngFor="let question of questions | async">
             <li>Answer 1</li>
             <li>Answer 2</li>
             <li>Answer 3</li>
             <li>Answer 4</li>
+            {{ question | json }}
           </ul>
     </div>
 
     <mat-divider></mat-divider>
 
     <div class="next-wrapper">
-        <button mat-raised-button color="warn">Next</button>
+        <button mat-raised-button color="warn" (click)="nextQuestion()" >Next</button>
     </div>
 
   </div>

@@ -8,7 +8,7 @@
     {
         "ID": 2,
         "question" : "What do mean by NULL in Javascript?",
-        "Answers" : ["no value or no object", "no Class or no object", "no ObjectClass or no object" , "True"],
+        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
         "Correct" : "Object" 
     }
 ]

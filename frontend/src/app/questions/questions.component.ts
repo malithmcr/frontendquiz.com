@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionsService } from '../questions.service';
 
 @Component({
   selector: 'questions',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private api: QuestionsService) { }
+  questions: any; 
   ngOnInit() {
+    this.questions = this.api.getQuestions();
   }
 
 }
