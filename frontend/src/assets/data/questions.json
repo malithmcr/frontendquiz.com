@@ -1,0 +1,32 @@
+[
+    {
+        "ID": 1,
+        "question" : "What is the correct JavaScript Data Type?",
+        "Answers" : ["Text", "Class", "Object" , "True"],
+        "Correct" : "Object" 
+    },
+    {
+        "ID": 2,
+        "question" : "What do mean by NULL in Javascript?",
+        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
+        "Correct" : "Object" 
+    },
+    {
+        "ID": 3,
+        "question" : "What do mean by NULL in Javascript?",
+        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
+        "Correct" : "Object" 
+    },
+    {
+        "ID": 4,
+        "question" : "What do mean by NULL in Javascript?",
+        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
+        "Correct" : "Object" 
+    },
+    {
+        "ID": 5,
+        "question" : "What do mean by NULL in Javascript?",
+        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
+        "Correct" : "Object" 
+    }
+]

@@ -8,10 +8,13 @@ import { QuestionsService } from '../questions.service';
 })
 export class QuestionsComponent implements OnInit {
 
+  public questions = [];
+
   constructor(private api: QuestionsService) { }
-  questions: any; 
+  
   ngOnInit() {
-    this.questions = this.api.getQuestions();
+    this.api.getQuestions()
+      .subscribe( data => this.questions = data );
   }
 
 }

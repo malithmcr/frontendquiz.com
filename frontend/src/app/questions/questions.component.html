@@ -1,16 +1,12 @@
 <div class="questions-wrapper">
-  <div class="questions-container">
+  <div class="questions-container" *ngFor="let question of questions">
     <h2>
-      Question Number 1 ?
+      {{question.question}}
     </h2>
 
     <div class="Anaswers">
-          <ul *ngFor="let question of questions | async">
-            <li>Answer 1</li>
-            <li>Answer 2</li>
-            <li>Answer 3</li>
-            <li>Answer 4</li>
-            {{ question | json }}
+          <ul *ngFor="let answers of question.Answers">
+            <li>{{answers}}</li>
           </ul>
     </div>
 
