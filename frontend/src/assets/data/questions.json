@@ -3,30 +3,30 @@
         "ID": 1,
         "question" : "What is the correct JavaScript Data Type?",
         "Answers" : ["Text", "Class", "Object" , "True"],
-        "Correct" : "Object" 
+        "Correct" : 1 
     },
     {
         "ID": 2,
         "question" : "What do mean by NULL in Javascript?",
         "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
-        "Correct" : "Object" 
+        "Correct" : 0 
     },
     {
         "ID": 3,
-        "question" : "What do mean by NULL in Javascript?",
+        "question" : "What do mean by o in Javascript?",
         "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
-        "Correct" : "Object" 
+        "Correct" : 3 
     },
     {
         "ID": 4,
-        "question" : "What do mean by NULL in Javascript?",
+        "question" : "What do mean by b in Javascript?",
         "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
-        "Correct" : "Object" 
+        "Correct" : 1 
     },
     {
         "ID": 5,
-        "question" : "What do mean by NULL in Javascript?",
+        "question" : "What do mean by c in Javascript?",
         "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
-        "Correct" : "Object" 
+        "Correct" : 2 
     }
 ]

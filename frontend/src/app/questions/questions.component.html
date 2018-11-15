@@ -1,21 +1,27 @@
 <div class="questions-wrapper">
-  <div class="questions-container" *ngFor="let question of questions">
-    <h2>
-      {{question.question}}
+  <div class="questions-container">
+    <h2 class="question">
+      {{questions[activeQuestion]?.question}}
     </h2>
 
     <div class="Anaswers">
-          <ul *ngFor="let answers of question.Answers">
-            <li>{{answers}}</li>
+          <ul *ngFor="let answers of questions[activeQuestion]?.Answers; let i = index">
+            <li [className]="isCorrectAnswer === i ? 'selected' : 'incorrect'" id="i" (click)="selectedQuestion(i)">{{answers}}</li>
           </ul>
     </div>
 
     <mat-divider></mat-divider>
-
+    <div class="pagination-wrapper">
+      <div class="pagination">
+        {{activeQuestion + 1}} / {{questions.length}}
+      </div>
+    </div>
+    <div class="score">
+        Your Score - {{score}}
+      </div>
     <div class="next-wrapper">
         <button mat-raised-button color="warn" (click)="nextQuestion()" >Next</button>
     </div>
-
   </div>
 </div>
 
