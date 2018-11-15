@@ -10,15 +10,19 @@ export class QuestionsComponent implements OnInit {
 
   public questions = [];
   score = 0;
-  answerSelected : number;
-  isCorrectAnswer: number;
+  correctAnswer: number = null;
+  inCorrectAnswer: number = null;
   activeQuestion = 0;
-  answerdQuestions = 0;
+  answerdQuestions: number = null;
+  questionAnswerd: boolean = false;
   Answers = null;
 
   constructor(private api: QuestionsService) { }
   nextQuestion() {
-    this.answerSelected = null;
+    
+    this.inCorrectAnswer = null;
+    this.correctAnswer = null;
+
     if(this.activeQuestion !== this.questions.length) {
       this.activeQuestion++
     }
@@ -26,13 +30,13 @@ export class QuestionsComponent implements OnInit {
 
   selectedQuestion(selected) {
     let userAnswer = selected;
-    
-    if(this.questions[this.activeQuestion].Correct === userAnswer) {
-      this.score = this.score + 10;
-      this.isCorrectAnswer = selected;
-    
+    this.correctAnswer = this.questions[this.activeQuestion].Correct;
+    this.answerdQuestions = selected;
+    this.questionAnswerd = true;
+    if(this.correctAnswer === userAnswer) {
+       this.score = this.score + 10;
     } else {
-      this.answerSelected = selected;
+      this.inCorrectAnswer = selected;
     }
     
   }

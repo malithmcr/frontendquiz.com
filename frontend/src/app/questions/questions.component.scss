@@ -38,6 +38,10 @@ div.questions-wrapper{
             background: #716c6c;
             color: #f7f7f7;
         }
+        li.correct {
+            background: green;
+            color: #f7f7f7;
+        }
         li.incorrect {
             background: red;
             color: #f7f7f7;
@@ -46,7 +50,7 @@ div.questions-wrapper{
             list-style: none;
             display: block;
             cursor: pointer;
-            margin: 0;
+            margin: 10px 0;
             background: #f7f7f7;
             padding: 21px;
             color: #631e0d;

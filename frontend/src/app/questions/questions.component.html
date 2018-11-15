@@ -5,8 +5,13 @@
     </h2>
 
     <div class="Anaswers">
-          <ul *ngFor="let answers of questions[activeQuestion]?.Answers; let i = index">
-            <li [className]="isCorrectAnswer === i ? 'selected' : 'incorrect'" id="i" (click)="selectedQuestion(i)">{{answers}}</li>
+          <ul>
+            <li *ngFor="let answers of questions[activeQuestion]?.Answers; let i = index"
+                [ngClass]="{correct: correctAnswer === i , incorrect: correctAnswer !== i &&  inCorrectAnswer === i}"
+                id="i" (click)="selectedQuestion(i)"
+                >
+               {{answers}}
+            </li>
           </ul>
     </div>
 

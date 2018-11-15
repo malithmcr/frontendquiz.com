@@ -2,8 +2,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
-h1 {
+.logo {
     display: inline-block;
+   img {
+    max-width: 320px;
+    padding: 10px;
+   }
 }
 
 .start-wrapper {
