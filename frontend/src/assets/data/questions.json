@@ -1,32 +1,32 @@
 [
     {
         "ID": 1,
-        "question" : "What is the correct JavaScript Data Type?",
+        "question" : "What is a correct JavaScript Data Type?",
         "Answers" : ["Text", "Class", "Object" , "True"],
-        "Correct" : 1 
+        "Correct" : 2
     },
     {
         "ID": 2,
-        "question" : "What do mean by NULL in Javascript?",
-        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
+        "question" : "What property do you use to create spacing between HTML elements?",
+        "Answers" : ["margin", "spacing", "padding" , "border"],
         "Correct" : 0 
     },
     {
         "ID": 3,
-        "question" : "What do mean by o in Javascript?",
-        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
+        "question" : "What is the property used to set the class’s text color?",
+        "Answers" : ["text", "text-background", "text-color" , "color"],
         "Correct" : 3 
     },
     {
         "ID": 4,
-        "question" : "What do mean by b in Javascript?",
-        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
-        "Correct" : 1 
+        "question" : "The acronym CSS stands for what?",
+        "Answers" : ["Cascading Style Sheets", "Carrot Sytem Style", "Correlated Styling System" , "Canvas Styling System"],
+        "Correct" : 0
     },
     {
         "ID": 5,
-        "question" : "What do mean by c in Javascript?",
-        "Answers" : ["no value or no object", "no Class or no object", "no value or no object" , "True"],
-        "Correct" : 2 
+        "question" : "In what way can you NOT reference CSS?",
+        "Answers" : ["Inline Styling", "Internal Style Sheet", "External Style Sheet" , "All three are correct"],
+        "Correct" : 3
     }
 ]

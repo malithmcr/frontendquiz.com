@@ -14,17 +14,24 @@ export class QuestionsComponent implements OnInit {
   inCorrectAnswer: number = null;
   activeQuestion = 0;
   answerdQuestions: number = null;
+  isFinished: boolean = false;
   questionAnswerd: boolean = false;
   Answers = null;
+  percent: number;
+
 
   constructor(private api: QuestionsService) { }
   nextQuestion() {
-    
     this.inCorrectAnswer = null;
     this.correctAnswer = null;
-
-    if(this.activeQuestion !== this.questions.length) {
+    this.questionAnswerd = false;
+    
+    if(this.activeQuestion !== this.questions.length - 1) {
       this.activeQuestion++
+    } else {
+      this.isFinished = true;
+      this.percent = this.score*100/this.questions.length + 1;
+
     }
   }
 
@@ -32,11 +39,12 @@ export class QuestionsComponent implements OnInit {
     let userAnswer = selected;
     this.correctAnswer = this.questions[this.activeQuestion].Correct;
     this.answerdQuestions = selected;
-    this.questionAnswerd = true;
-    if(this.correctAnswer === userAnswer) {
-       this.score = this.score + 10;
+    if(this.correctAnswer === userAnswer && !this.questionAnswerd) {
+       this.score = this.score + 1;
+       this.questionAnswerd = true;
     } else {
       this.inCorrectAnswer = selected;
+      this.questionAnswerd = true;
     }
     
   }
