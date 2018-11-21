@@ -8,11 +8,11 @@ import { IQuestion } from './question';
 })
 export class QuestionsService {
 
-  readonly ROOT_URL = '/assets/data/questions.json';
+  readonly FETCH_URL = '/assets/data/questions.json';
 
   constructor(private http: HttpClient) { }
 
   getQuestions(): Observable<IQuestion[]> {
-    return this.http.get<IQuestion[]>(this.ROOT_URL);
+    return this.http.get<IQuestion[]>(this.FETCH_URL);
   }
 }

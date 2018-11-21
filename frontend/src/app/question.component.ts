@@ -13,6 +13,5 @@ export class QuestionComponent {
     start() {
         this.startQuiz = !this.startQuiz;
         this.startButton = 'Loading...';
-        console.log("started");
     }
 }
