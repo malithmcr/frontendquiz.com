@@ -50,7 +50,7 @@ export class QuestionsComponent implements OnInit {
   }
   ngOnInit() {
     this.api.getQuestions()
-      .subscribe( data => this.questions = data );
+      .subscribe( data => this.questions = data.questions );
   }
 
 }

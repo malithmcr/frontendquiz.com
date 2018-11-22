@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // get all questin
 app.get('/api/v1/questions', (req, res) => {
+  // Website you wish to allow to connect
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
   res.status(200).send({
     success: 'true',
     message: 'questions retrieved successfully',

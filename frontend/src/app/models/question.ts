@@ -1,6 +1,8 @@
 export interface IQuestion {
-    ID: number,
-    question: string,
-    Answers: any,
-    Correct: string
+    questions: [{
+        ID: number,
+        question: string,
+        Answers: any,
+        Correct: string
+    }]
 }
