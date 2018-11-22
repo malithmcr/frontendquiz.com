@@ -1,5 +1,5 @@
 <div class="questions-wrapper">
-  <div class="questions-container">
+  <div class="questions-container" *ngIf='!isFinished'>
     <h2 class="question">
       {{questions[activeQuestion]?.question}}
     </h2>
@@ -7,7 +7,7 @@
     <div class="Anaswers">
           <ul>
             <li *ngFor="let answers of questions[activeQuestion]?.Answers; let i = index"
-                [ngClass]="{correct: correctAnswer === i , incorrect: correctAnswer !== i &&  inCorrectAnswer === i}"
+                [ngClass]="{answerd: questionAnswerd, correct: correctAnswer === i , incorrect: correctAnswer !== i &&  inCorrectAnswer === i}"
                 id="i" (click)="selectedQuestion(i)"
                 >
                {{answers}}
@@ -27,6 +27,11 @@
     <div class="next-wrapper">
         <button mat-raised-button color="warn" (click)="nextQuestion()" >Next</button>
     </div>
+  </div>
+
+  <div class="score-bord" *ngIf='isFinished'>
+      Thank you for taking the quiz. We are still testing our app.
+      Your Score - {{ percent }} %
   </div>
 </div>
 

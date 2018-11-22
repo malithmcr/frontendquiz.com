@@ -38,13 +38,18 @@ div.questions-wrapper{
             background: #716c6c;
             color: #f7f7f7;
         }
-        li.correct {
+        li.answerd.correct:hover, li.answerd.correct {
             background: green;
             color: #f7f7f7;
         }
-        li.incorrect {
+        li.answerd.incorrect:hover, li.answerd.incorrect {
             background: red;
             color: #f7f7f7;
+        }
+        li.answerd:hover, li.answerd {
+            background: #f7f7f7;
+            color: #631e0d;
+            cursor: no-drop;
         }
         li {
             list-style: none;
@@ -59,4 +64,10 @@ div.questions-wrapper{
 
         }
     }
+}
+
+.score-bord {
+    text-align: center;
+    margin: 120px 0;
+    font-weight: bold;
 }
